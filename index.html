@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Spencer's Developer Portfolio</title>
+  <style>
+    body { font-family: Arial, sans-serif; margin: 40px; background: #f9f9f9; }
+    h1 { color: #333; }
+    .project { background: #fff; padding: 20px; margin-bottom: 20px; border-radius: 8px; box-shadow: 0 2px 5px rgba(0,0,0,0.1); }
+    .project h2 { margin-top: 0; color: #007acc; }
+    .tools { font-style: italic; color: #555; }
+    a { color: #007acc; text-decoration: none; }
+    a:hover { text-decoration: underline; }
+    footer { margin-top: 40px; text-align: center; color: #777; }
+    nav { margin-bottom: 30px; }
+    nav a { margin-right: 15px; color: #007acc; text-decoration: none; }
+    nav a:hover { text-decoration: underline; }
+    #contact { background: #fff; padding: 20px; border-radius: 8px; box-shadow: 0 2px 5px rgba(0,0,0,0.1); margin-top: 40px; }
+    .email-button { display: inline-block; padding: 10px 20px; background: #007acc; color: #fff; border-radius: 5px; text-decoration: none; }
+    .email-button:hover { background: #005f99; }
+  </style>
+</head>
+<body>
+  <h1>Spencer's Developer Portfolio</h1>
+  <nav>
+    <a href="#smp">SMP Coach</a>
+    <a href="#dashboard">API Dashboard</a>
+    <a href="#browser">AI Coach</a>
+    <a href="#contact">Contact</a>
+  </nav>
+  <p>Welcome! Here are some of my featured projects:</p>
+
+  <div class="project" id="smp">
+    <h2>SMP Performance Coach</h2>
+    <p><strong>Problem:</strong> Manually tracking fitness data and writing coaching notes took 30+ minutes per day.</p>
+    <p><strong>Solution:</strong> Automated pipeline that trains a classifier on 28 days of data, predicts daily goal achievement, and generates a coaching message.</p>
+    <p class="tools">Tools: Python, scikit-learn, pandas, FastAPI</p>
+    <p><strong>Result:</strong> Prediction + coaching in under 2 seconds. Exports weekly JSON report.</p>
+    <p><a href="https://github.com/NatiriSpencer/smp-tracker">View Code</a></p>
+  </div>
+
+  <div class="project" id="dashboard">
+    <h2>Multi-Endpoint API Dashboard</h2>
+    <p><strong>Problem:</strong> Three separate data sources with no unified view. Reporting was manual and inconsistent.</p>
+    <p><strong>Solution:</strong> Dashboard that fetches from three endpoints, processes each independently, and outputs a combined summary with protocol comparison.</p>
+    <p class="tools">Tools: Python, requests, pandas</p>
+    <p><strong>Result:</strong> Single command produces a full multi-source report. Reduced prep time by 90%.</p>
+    <p><a href="https://github.com/NatiriSpencer/api-dashboard">View Code</a></p>
+  </div>
+
+  <div class="project" id="browser">
+    <h2>Browser-Based AI Coach</h2>
+    <p><strong>Problem:</strong> Clients needed a way to get coaching feedback without installing software.</p>
+    <p><strong>Solution:</strong> Client-side JavaScript tool. Prediction engine and coaching generator run entirely in the browser. No server required.</p>
+    <p class="tools">Tools: JavaScript, DOM API, Fetch API</p>
+    <p><strong>Result:</strong> Zero setup for end users. Works on any device with a browser.</p>
+    <p><a href="https://github.com/NatiriSpencer/browser-coach">View Code</a></p>
+  </div>
+
+  <div id="contact">
+    <h2>Contact</h2>
+    <p>If you'd like to get in touch, click below:</p>
+    <p><a class="email-button" href="mailto:spencernatiri@gmail.com">Email Me</a></p>
+  </div>
+
+  <footer>
+    <p>© 2026 Spencer | Built with ❤️ using GitHub Pages</p>
+  </footer>
+</body>
+</html>
